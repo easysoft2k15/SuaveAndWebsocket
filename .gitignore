@@ -1,0 +1,5 @@
+packages/
+SuaveAndWebsocket/bin/
+SuaveAndWebsocket/obj/
+SuaveAndWebsocket/wwwroot/js/out/
+SuaveAndWebsocket/wwwroot/js/node_modules/
