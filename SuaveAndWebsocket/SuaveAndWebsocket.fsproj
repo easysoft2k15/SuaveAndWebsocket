@@ -63,6 +63,7 @@
     <None Include="wwwroot\view\index.html" />
     <None Include="wwwroot\js\app.fsx" />
     <None Include="README.MD" />
+    <Content Include="cred.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Akka">
@@ -74,7 +75,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="FSharp.Core">
-      <HintPath>..\packages\FSharp.Core.3.1.2.5\lib\net40\FSharp.Core.dll</HintPath>
+      <HintPath>..\packages\FSharp.Core.4.0.0.1\lib\net40\FSharp.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FSharp.PowerPack">
@@ -96,6 +97,10 @@
     </Reference>
     <Reference Include="Suave">
       <HintPath>..\packages\Suave.1.1.3\lib\net40\Suave.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Suave.OAuth">
+      <HintPath>..\packages\Suave.OAuth.0.7.7\lib\net40\Suave.OAuth.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
