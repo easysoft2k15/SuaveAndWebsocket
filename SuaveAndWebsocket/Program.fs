@@ -1,6 +1,7 @@
 ﻿namespace SuaveAndWebsocket
 
 open System
+open System.Diagnostics
 
 module MainEntry=
   let getConfig (argv:string array)=
@@ -12,6 +13,7 @@ module MainEntry=
   [<EntryPoint>]
   let main argv = 
   
+    Trace.TraceInformation "Msg from main program!!!"
     FileLog.Log "Msg from main program!!!"
     
     let port,webroot=getConfig argv
