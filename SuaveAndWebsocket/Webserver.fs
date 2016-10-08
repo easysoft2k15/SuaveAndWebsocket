@@ -110,8 +110,11 @@ module Webserver=
 
   //Start web server
   //-------------------
-  let StartServer()=
-    let config={defaultConfig with homeFolder= Some __SOURCE_DIRECTORY__}
+  let StartServer (port:string)=
+    let config={defaultConfig with
+                    bindings=[HttpBinding.mk HTTP IPAddress.Loopback (uint16 port)]
+               }
+
     let webRoot=__SOURCE_DIRECTORY__ + @"\wwwroot"
 
     let app=choose [

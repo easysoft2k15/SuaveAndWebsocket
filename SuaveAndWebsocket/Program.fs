@@ -4,9 +4,9 @@ open System
 module MainEntry=
 
     [<EntryPoint>]
-    let main argv = 
+    let main [|port;staticFilePath|] = 
     
-        Webserver.StartServer() |> ignore
+        (Webserver.StartServer port) |> ignore
         Console.ReadKey() |> ignore
 
         0 // return an integer exit code
