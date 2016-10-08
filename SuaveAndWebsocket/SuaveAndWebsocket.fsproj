@@ -61,7 +61,6 @@
     <Compile Include="ActorManager.fs" />
     <Compile Include="Webserver.fs" />
     <None Include="App.config" />
-    <None Include="README.MD" />
     <None Include="paket.references" />
     <Compile Include="Program.fs" />
   </ItemGroup>
