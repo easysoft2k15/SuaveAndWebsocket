@@ -28,7 +28,7 @@ Target "StageWebsiteAssets" (fun _ ->
     let blacklist =
         [ "typings"
           ".fs"
-          ".config"
+          //".config"
           ".references"
           "tsconfig.json" ]
     let shouldInclude (file:string) =
