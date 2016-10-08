@@ -38,8 +38,8 @@ One point of interest is the fact that while creating the actor, the function (1
 
 wwwroot
 It has two folder:
-..* /view: containig the *:HTML files
-..* /js: containing *.FSX files.
+* /view: containig the *:HTML files
+* /js: containing *.FSX files.
 The FSX files are FSharp files that get compiled into javascript by FABLE
 	
 ---------------------------------
