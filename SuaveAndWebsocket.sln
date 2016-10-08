@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{BBF700E7-9442-4A4A-AF0E-DDF1C4DC3ACB}"
 	ProjectSection(SolutionItems) = preProject
 		build.fsx = build.fsx
+		SuaveAndWebsocket\wwwroot\web.config = SuaveAndWebsocket\wwwroot\web.config
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Paket", "Paket", "{244143CA-D2F5-4A14-8B90-38DDE0956778}"
