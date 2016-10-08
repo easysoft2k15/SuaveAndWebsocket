@@ -164,7 +164,8 @@ module Webserver=
             ]
      #endif 
 
-    let _,server=startWebServerAsync config app
-    let cts=new System.Threading.CancellationTokenSource()
-    Async.Start server,cts.Token
+//    let _,server=startWebServerAsync config app
+//    let cts=new System.Threading.CancellationTokenSource()
+//    Async.Start server,cts.Token
 
+    startWebServer config app

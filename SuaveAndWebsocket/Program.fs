@@ -18,6 +18,6 @@ module MainEntry=
     
     let port,webroot=getConfig argv
     (Webserver.StartServer port webroot) |> ignore
-    Console.ReadKey() |> ignore
+    //Console.ReadKey() |> ignore
   
     0 // return an integer exit code
