@@ -1,0 +1,17 @@
+source https://www.nuget.org/api/v2/
+redirects on
+framework net452
+
+nuget FAKE
+
+// Suave
+nuget Suave
+nuget Suave.OAuth
+
+// AKKA
+nuget Akka.Fsharp
+
+
+// Application Insights
+nuget Microsoft.ApplicationInsights.TraceListener content:none
+nuget Microsoft.ApplicationInsights.WindowsServer > 2 prerelease content:none
