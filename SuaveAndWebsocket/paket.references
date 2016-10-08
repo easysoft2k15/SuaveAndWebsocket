@@ -1,3 +1,6 @@
 Suave
 Suave.OAuth
 Akka.Fsharp
+
+Microsoft.ApplicationInsights.TraceListener
+Microsoft.ApplicationInsights.WindowsServer

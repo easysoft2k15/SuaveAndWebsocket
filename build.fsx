@@ -1,10 +1,13 @@
 ﻿#I @"packages/FAKE/tools/"
 #r @"FakeLib.dll"
+#load @"SuaveAndWebSocket/Utility/FileLog.fs"
 
 open Fake
 open Fake.Azure
 open System
 open System.IO
+
+open SuaveAndWebsocket
 
 Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
 let solutionFile = "SuaveAndWebsocket.sln"
@@ -20,6 +23,8 @@ Target "BuildSolution" (fun _ ->
     |> ignore)
 
 Target "StageWebsiteAssets" (fun _ ->
+    FileLog.Log "Msg from build.fsx!!!!!!"
+  
     let blacklist =
         [ "typings"
           ".fs"
