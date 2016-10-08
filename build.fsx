@@ -7,7 +7,7 @@ open System
 open System.IO
 
 Environment.CurrentDirectory <- __SOURCE_DIRECTORY__
-let solutionFile = "SuaveAndWebSocket.sln"
+let solutionFile = "SuaveAndWebsocket.sln"
 
 Target "BuildSolution" (fun _ ->
     solutionFile
@@ -35,7 +35,6 @@ Target "Deploy" Kudu.kuduSync
 
 "StageWebsiteAssets"
 ==> "BuildSolution"
-==> "StageWebJob"
 ==> "Deploy"
 
 
