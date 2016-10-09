@@ -45,14 +45,16 @@ The FSX files are FSharp files that get compiled into javascript by FABLE
 # DEPLOYMENT ON AZURE
 ---------------------------------
 Thanks to this post/project I was able to publish the application to Azure:
-1. Tomas Petricek
+- Tomas Petricek
    - https://github.com/tpetricek/suave-fshome
-2. ISAAC ABRAHAM
+- ISAAC ABRAHAM
    - https://cockneycoder.wordpress.com/2016/04/08/hosting-suave-in-the-azure-app-service/
+
 Deployment use this tools:
-1. Paket (to pull in nuget packages) 
+- Paket (to pull in nuget packages) 
 	https://fsprojects.github.io/Paket/index.html
-2. Fake (to build project berofre deploying)
+- Fake (to build project berofre deploying)
+
 Basic steps are:
 1. insert nuget packages into paket.dependencies (on the root directory of the solution)
 2. for each project insert used nuget package into paket.references (on the root directory of the project)
