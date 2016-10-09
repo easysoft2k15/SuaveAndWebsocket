@@ -72,9 +72,9 @@ Basic steps are:
 
 ## CLIENT SIDE
 Write Fsharp code inside Visual Studio.
-Open a CMD onto the "/wwwroot/js" folder and lunch the command:
-Fable -w
-this make Fable watch for changes in FSX files and compiles them into javascript every time they change
+- Open a CMD onto the "/wwwroot/js" folder and lunch the command:
+  Fable -w
+- this make Fable watch for changes in FSX files and compiles them into javascript every time they change
 
 ## SERVER SIDE
 Write Fsharp code and compile inside Visual Studio (usual stuff)
