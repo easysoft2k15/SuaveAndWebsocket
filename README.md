@@ -56,14 +56,14 @@ Deployment use this tools:
 - Fake (to build project berofre deploying)
 
 Basic steps are:
-1. insert nuget packages into paket.dependencies (on the root directory of the solution)
-2. for each project insert used nuget package into paket.references (on the root directory of the project)
-3. create a .deployment file that is automatically run by  Azure when project is pulled from github repository
-4. in point (3) the command run Build.cmd that is responsible to bootstrap paket and lunch "FAKE build.fsx" to build project
-5. build.fsx build project anc stage it on the server
-6. web.config must add an handler to forward HTTP trafic to Suave application (this is where owr application is lunched)
+- insert nuget packages into paket.dependencies (on the root directory of the solution)
+- for each project insert used nuget package into paket.references (on the root directory of the project)
+- create a .deployment file that is automatically run by  Azure when project is pulled from github repository
+- in point (3) the command run Build.cmd that is responsible to bootstrap paket and lunch "FAKE build.fsx" to build project
+- build.fsx build project anc stage it on the server
+- web.config must add an handler to forward HTTP trafic to Suave application (this is where owr application is lunched)
    `NOTE: web.config must be copied to the stage folder. For this reasons is under the wwwroot folder from where in turn is get copied to the stage folder by the Kudu.stage command in build.fsx` 		 
-7. In order to deploy on Azure You can point the browser to:
+- In order to deploy on Azure You can point the browser to:
 	https://deploy.azure.com/?repository=YOUR_REPOSITORY#/form/setup
 
 ---------------------------------
