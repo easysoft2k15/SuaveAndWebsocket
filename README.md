@@ -62,7 +62,7 @@ Basic steps are:
 - in point (3) the command run Build.cmd that is responsible to bootstrap paket and lunch "FAKE build.fsx" to build project
 - build.fsx build project anc stage it on the server
 - web.config must add an handler to forward HTTP trafic to Suave application (this is where owr application is lunched)
-   `NOTE: web.config must be copied to the stage folder. For this reasons is under the wwwroot folder from where in turn is get copied to the stage folder by the Kudu.stage command in build.fsx` 		 
+   `NOTE: web.config must be copied to the stage folder. For this reasons is under the wwwroot folder from where is copied to the stage folder by the Kudu.stage command in build.fsx` 		 
 - In order to deploy on Azure You can point the browser to:
 	https://deploy.azure.com/?repository=YOUR_REPOSITORY#/form/setup
 
